@@ -21,3 +21,6 @@ span{
     content: "nearby";
     margin-left: 10px;
 }
+.bigText {
+    font-size: 40px;
+}
