@@ -2,6 +2,7 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <meta charset="utf-8" />
     <title></title>
     <style>
@@ -37,10 +38,14 @@
     </style>
 </head>
 <body>
+        <div id="vue-app">
     <h1>Jeg heter Per André og velkommen til siden min.</h1>
     <hr />
-    <h2>Kode links:</h2>
-    <ul style="list-style-type: none;">
+    <button v-on:click="kodeLenker = !kodeLenker" class="dilemma">Vis Kode Lenker</button>
+    <ul style="list-style-type: none;" v-if="kodeLenker">
+        <li><h2>Kode lenker:</h2></li>
+        <li><a href="https://github.com/Pershjan/PerARepository/blob/master/Prosjekter/MLG%20Clicker.html" target="_blank" class="dilemma">MLG Clicker</a></li>
+
         <li><a href="https://github.com/Pershjan/PerARepository/blob/master/Prosjekter/ferdighet2SVAR.html" target="_blank" class="dilemma">Funksjon 2</a></li>
 
         <li><a href="https://github.com/Pershjan/PerARepository/blob/master/Prosjekter/Ferdighet2A.html" target="_blank" class="dilemma">Funksjon 2A</a></li>
@@ -76,8 +81,12 @@
         <li><a href="https://github.com/Pershjan/PerARepository/blob/master/Prosjekter/Oppgave-TrePaRad.html" target="_blank" class="dilemma">Oppgave-Tre På Rad</a></li>
 
         <li><a href="https://github.com/Pershjan/PerARepository/blob/master/Prosjekter/Oppgave-%C3%85pningstid.html" target="_blank" class="dilemma">Oppgave-Åpningstid</a></li>
+    </ul>
+    <button v-on:click="liveLenker = !liveLenker" class="dilemma">Vis Live Lenker</button>
+    <ul style="list-style-type: none;" v-if="liveLenker">
+        <li><h2>Live lenker:</h2></li>
 
-        <li><h2>Live links:</h2></li>
+        <li><a href="https://pershjan.github.io/PerARepository/Prosjekter/MLG%20Clicker.html" target="_blank" class="dilemma">MLG Clicker </a></li>
 
         <li><a href="https://pershjan.github.io/PerARepository/Prosjekter/ferdighet2SVAR.html" target="_blank" class="dilemma">Funksjon 2</a></li>
 
@@ -117,7 +126,8 @@
     </ul>
     <hr />
     <a href="https://pershjan.github.io/PerARepository/Prosjekter/index.html" target="_blank" class="dilemma">Tilbake til forsiden!</a>
+    </div>
 
-
+<script src="IndexVue.js"></script>
 </body>
 </html>
