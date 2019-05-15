@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MVI</title>
+
+</head>
+<body style="background-color: darkgrey;">
+    <div id="vue-app-one">
+        <h2>{{title}}</h2>
+        <p>{{greet}}</p>
+        <button v-on:click="changeTitle">Change app two title</button>
+    </div>
+    <hr />
+    <div id="vue-app-two">
+        <h2>{{title}}</h2>
+        <p>{{greet}}</p>
+        <button v-on:click="changeTitle">Change app one title</button>
+    </div>
+    
+    <script src="multiVueJS.js"></script>
+</body>
+</html>
