@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="punchBagCSS.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PunchBag</title>
+</head>
+<body>
+<div id="punch-app">
+    
+    <!--Bag image-->
+    <div id="bag"></div>
+    
+    <!--Bag HP--> 
+    <div id="bag-hp">
+        <div v-bind:style="{width: hp + '%'}"></div>
+    </div>  
+    <!--game controls-->
+    <div id="controls">
+        <button v-on:click="punch" v-show="!ended">Punch</button>
+        <button v-on:click="restart">Restart</button>
+    </div>
+</div>
+    <script src="punchBagJS.js"></script>
+</body>
+</html>
