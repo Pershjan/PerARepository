@@ -10,8 +10,12 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-
-            if (!isValid(args))
+            int RandomNumber(int min, int max)
+            {
+                Random random = new Random();
+                return random.Next(min, max);
+            }
+            if (!IsValid(args))
             {
                 ShowHelpText();
                 return;
@@ -19,8 +23,7 @@ namespace ConsoleApp2
             var length = Convert.ToInt32(args[1]);
             var options = args[1];
         }
-
-        private static bool IsValid(string[] args)
+        static bool IsValid(string[] args)
         {
             if (args.Length != 2) return false;
             
@@ -40,7 +43,7 @@ namespace ConsoleApp2
 
             foreach (var character in lengthStr)
             {
-                if (!char.IsDigit(character))
+                if (char.IsDigit(character))
                 {
                     return false;
                 }
