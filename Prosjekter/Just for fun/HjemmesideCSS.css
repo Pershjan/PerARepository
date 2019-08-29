@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 20px;
+}
+html, body{
+    height: 100%;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0,.5);
+    position: fixed;
+    z-index: 99;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav p{
+    float:right;
+    text-decoration: none;
+    color: white;
+    margin-right: 3%;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif; 
+}
+.sect{
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.subSection{
+    height: 45vh;
+    background-image: url("WoodWallpaper.jpg");
+    background-size: cover;
+}
+.sectOne{
+    background-image: url("StarWallpaper.jpg")
+}
+.sectTwo{
+    background-image: url("AwesomeWallpaper.jpg")
+}
+.sectThree{
+    background-image: url("CityWallpaper.jpg")
+}
+.poop{
+    font-size: 60px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.centerr{
+    font-size: 30px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+div p{
+    color: white;
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.left-col{
+float:left;
+padding-left: 40%;
+}
+.right-col {
+float:left;
+padding-left: 6.7%;
+}
+.left-col2{
+    float:left;
+    padding-left: 40%;
+    }
+.right-col2{
+    float:left;
+    padding-left: 6%;
+    }
+.left-col3{
+    float:left;
+    padding-left: 40%;
+    }
+.right-col3{
+    float:left;
+    padding-left: 5%;
+    }
+.left-col4{
+    float:left;
+    padding-left: 40%;
+    }
+.right-col4{
+    float:left;
+    padding-left: 8%;
+    }
+.left-col5{
+    float:left;
+    padding-left: 34%;
+    }
+.right-col5{
+    float:left;
+    padding-left: 7%;
+    }
