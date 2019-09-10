@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 html, body{
     height: 100%;
+    scroll-behavior: smooth;
 }
 nav{
     height: 50px;
@@ -36,9 +37,11 @@ nav p{
     background-attachment: fixed;
 }
 .subSection{
+    overflow: auto;
     height: 45vh;
     background-image: url("WoodWallpaper.jpg");
     background-size: cover;
+    background-position: center;
 }
 .sectOne{
     background-image: url("StarWallpaper.jpg")
@@ -48,6 +51,9 @@ nav p{
 }
 .sectThree{
     background-image: url("CityWallpaper.jpg")
+}
+.sectFour{
+    background-image: url("TechWallpaper.jpg")
 }
 .poop{
     font-size: 60px;
@@ -61,22 +67,29 @@ nav p{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
+.lefty{
+    font-size: 30px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    text-align: center;
+}
 div p{
     color: white;
     font-size: 200%;
     font-family: 'Times New Roman', Times, serif;
 }
 .left-col{
-float:left;
-padding-left: 40%;
+float: left;
+padding-left: 38%;
 }
 .right-col {
-float:left;
+float: left;
 padding-left: 6.7%;
 }
 .left-col2{
     float:left;
-    padding-left: 40%;
+    padding-left: 38%;
     }
 .right-col2{
     float:left;
@@ -84,7 +97,7 @@ padding-left: 6.7%;
     }
 .left-col3{
     float:left;
-    padding-left: 40%;
+    padding-left: 38%;
     }
 .right-col3{
     float:left;
@@ -92,7 +105,7 @@ padding-left: 6.7%;
     }
 .left-col4{
     float:left;
-    padding-left: 40%;
+    padding-left: 38%;
     }
 .right-col4{
     float:left;
@@ -106,3 +119,23 @@ padding-left: 6.7%;
     float:left;
     padding-left: 7%;
     }
+.left-col6{
+    float:left;
+    padding-left: 34%;
+    }
+.right-col6{
+    float:left;
+    padding-left: 7%;
+    }
+.left-col7{
+    float:left;
+    padding-left: 35%;
+    }
+.right-col7{
+    float:left;
+    padding-left: 7%;
+    }
+hr{
+    width: 99.90%;
+    border: white 1px solid;
+}
